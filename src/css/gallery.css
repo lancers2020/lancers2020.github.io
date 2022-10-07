@@ -1,0 +1,235 @@
+.gallery-card-1-background{
+    background-image: url(../pictures/sunset.jpg);
+    width: 100%;
+    min-height: 760px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.gallery-card-1-background>h2{
+    font-family: 'Passions Conflict', cursive;
+    position: relative;
+    margin: 0;
+    top: 300px;
+    left: 20%;
+    right: 20%;
+    font-size: 12rem;
+    color: white;
+}
+
+/* this is for card-2 */
+.gallery-card-2{
+    display: flex;
+}
+
+
+.gallery-card-2-background{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../pictures/gallery/little-red-riding-hood-2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-position-x: 700px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 720px;
+    /* background-color: red; */
+}
+.gallery-card-2-background:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../pictures/gallery/up.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-position-x: 700px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 720px;
+    /* background-color: red; */
+}
+.gallery-card-2-background:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../pictures/gallery/max.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-position-x: 700px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 720px;
+    /* background-color: red; */
+}
+.gallery-card-2-background>div>img{
+    width: 200px;
+    height: 200px;
+    opacity: .4;
+}
+.gallery-card-2-background>div>img:hover{
+    opacity: .9;
+}
+.gallery-card-2-left{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.gallery-card-2-right{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+
+/* this is for card-3 */
+.gallery-card-2{
+    height: 700px;
+    position: relative;
+    width: 100%;
+    display: block;
+    /* background-color: red; */
+}
+.carousel-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+.arrow-prev{
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next{
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+[id^= "bg"]{
+    display: none;
+}
+.bg-1{
+    z-index: 2;
+    opacity: 1;
+    background: url(../pictures/gallery/little-red-riding-hood-2.png);
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-position-x: 700px;
+    background-repeat: no-repeat;
+}
+.bg-2{
+    background: url(../pictures/gallery/up-2.png);
+    object-fit: cover;
+    background-size: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-position-x: 750px;
+    background-repeat: no-repeat;
+}
+.bg-3{
+    background: url(../pictures/gallery/max.png);
+    object-fit: cover;
+    background-size: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-position-x: 750px;
+    background-repeat: no-repeat;
+}
+*:target ~ .bg-1{
+    opacity: 0;
+}
+#bg-1:target ~ .bg-1{
+    opacity: 1;
+}
+#bg-2:target ~ .bg-2, #bg-3:target ~ .bg-3{
+    z-index: 3;
+    opacity: 1;
+}
+.gallery-card-2-center{
+    margin-left: 8%;
+    padding-right: 40%;
+    padding-top: 40px;
+    /* background-color: blue; */
+}
+.gallery-card-2-center>.center-top>.title{
+    font-family: cursive;
+    font-size: 4.5rem;
+    color:#372948;
+}
+.gallery-card-2-center>.center-top>.date{
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: black;
+}
+.gallery-card-2-center>.center-top>.rating{
+    display: flex;
+    margin-top: 30px;
+}
+.gallery-card-2-center>.center-top>.rating>img{
+    width: 40px;
+    height: 40px;
+}
+.gallery-card-2-center>.center-top>.genre{
+    font-family: cursive;
+    font-size: 2.5rem;
+    margin-top: 15px;
+}
+.center-bottom{
+    font-family: cursive;
+    font-size: 2.5rem;
+    display: flex;
+    position: absolute;
+    top: 500px;
+}
+.center-bottom-add{
+    display: flex;
+    padding: 10px;
+    background-color: #3D8361;
+    color: white;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.center-bottom-play{
+    display: flex;
+    padding: 10px;
+    background-color: #EB1D36;
+    color: white;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.center-bottom-add>div:nth-child(2)>img,
+.center-bottom-play>div:nth-child(2)>img{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/* this is for card-3 */
+.gallery-card-3{
+    height: 700px;
+    position: relative;
+    width: 100%;
+    display: block;
+    background-color: #25316D;
+}
