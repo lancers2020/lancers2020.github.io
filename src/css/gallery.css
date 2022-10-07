@@ -252,9 +252,6 @@
 .gallery-is-visible{
     display: block;
 }
-.gallery-is-bottom{
-    display: block;
-}
 .gallery-left{
     background-color: rgb(255, 255, 255, .4);
     max-width: 400px;
@@ -314,4 +311,24 @@
     top: 0;
     margin-top: 145.5px;
     z-index: 6;
+    background-color: green;
+}
+
+/* this is for the gallery-bottom */
+.gallery-bottom{
+    max-width: 400px;
+    min-width: 400px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    color: white;
+    border-radius: 5px;
+    margin-top: 80px;
+    height: 600px;
+    margin-top: 600px;
+    background-color: orange;
+    display: none;
+}
+.gallery-is-bottom{
+    display: block;
+    margin-top: 700px;
 }
