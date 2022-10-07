@@ -1,0 +1,151 @@
+.candle-card-1{
+    height: 753px;
+    display: flex;
+}
+.card-1-left{
+    /* background-color: red; */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    margin-top: 58px;
+}
+.card-1-left>img:nth-child(1){
+    width: 80%;
+    height: 535px;
+    object-fit: cover;
+    padding: 5px;
+    border: 2px solid white;
+}
+.card-1-left>img:nth-child(2){
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -220px;
+    left: -465px;
+    background-color: rgb(255, 255, 255, .6);
+    padding: 5px;
+    border-radius: 50%;
+}
+.card-1-left>img:nth-child(2):hover{
+    transform: scale(1.2) rotate(360deg);
+    transition-duration: .4s;
+}
+
+.card-1-right{
+    /* background-color: blue; */
+    width: 600px;
+    margin-top: 58px;
+    padding: 20px;
+}
+.card-1-right-child{
+    background-color: rgb(251, 242, 207, .5);
+    border-radius: 10px;
+}
+.card-1-right>.card-1-right-child>.description{
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.card-1-right>.card-1-right-child>.list{
+    overflow-y: auto;
+    height: 500px;
+    margin-top: 20px;
+}
+.card-1-right>.card-1-right-child>.list>div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.card-1-right>.card-1-right-child>.list>div:hover{
+    background-color: rgba(255, 237, 164, 0.8);
+}
+.card-1-right>.card-1-right-child>.list>div:nth-last-child(1):hover{
+    background-color: rgba(255, 237, 164, 0.8);
+    border-bottom-left-radius: 10px;
+}
+.card-1-right>.card-1-right-child>.list>div:hover .list-display{
+    transform: scale(1.2);
+    transition-duration: .4s;
+}
+.list-number{
+    font-family: cursive;
+    font-size: 20px;
+    width: 20px;
+}
+.list-display{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.list-1>.list-display{
+    background-image: url(../pictures/gallery/cars.jpeg);
+}
+.list-2>.list-display{
+    background-image: url(../pictures/gallery/max.jpeg);
+}
+.list-3>.list-display{
+    background-image: url(../pictures/gallery/how-to-train-your-dragon.jpeg);
+}
+.list-4>.list-display{
+    background-image: url(../pictures/gallery/frozen.jpeg);
+}
+.list-5>.list-display{
+    background-image: url(../pictures/gallery/kubo.jpeg);
+}
+.list-6>.list-display{
+    background-image: url(../pictures/gallery/the-incredibles.jpeg);
+}
+.list-7>.list-display{
+    background-image: url(../pictures/gallery/the-sea-beast.jpeg);
+}
+.list-title{
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 20px;
+}
+
+/* this is for card-2 */
+.candle-card-2{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color: #B6E388;
+    width: 100%;
+    height: 50px;
+    
+}
+.card-2-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    /* background-color: blue; */
+}
+.candle-card-2>.card-2-wrapper>div:nth-child(even)>img{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+.candle-card-2>.card-2-wrapper>div:nth-child(odd)>img{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+.candle-card-2>.card-2-wrapper>div:hover{
+    background-color: rgba(255, 237, 164, 0.8);
+    border-radius: 50%;
+    border: 2px dashed white;
+}
+.candle-card-2>.card-2-wrapper>div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #B6E388;
+}
