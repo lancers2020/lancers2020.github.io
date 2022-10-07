@@ -14,4 +14,22 @@ function changeBg(){
         navbar.classList.remove('no-opacity-2');
     }
 }
+function changePosition(){
+    var position = document.getElementById('gallery-left');
+    var invisible = document.getElementById('gallery-invisible');
+    var scrollValue = window.scrollY;
+    if(scrollValue > 1405 && !(scrollValue <= 1405) && !(scrollValue > 2024 )){
+        position.classList.add('fixed-effect');
+        invisible.classList.add('gallery-is-visible');
+        invisible.classList.remove('gallery-is-bottom');
+    }else if(scrollValue > 2024){
+        invisible.classList.add('gallery-is-bottom');
+    }else{
+        position.classList.remove('fixed-effect');
+        invisible.classList.remove('gallery-is-visible');
+        invisible.classList.remove('gallery-is-bottom');
+    }
+}
+
 window.addEventListener('scroll', changeBg);
+window.addEventListener('scroll', changePosition);
